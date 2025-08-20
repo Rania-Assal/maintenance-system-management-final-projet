@@ -5,9 +5,9 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
-                    </a>
+                    <span class="text-2xl font-extrabold tracking-wide text-indigo-600">
+    Techni<span class="text-gray-800 dark:text-gray-200">Connect</span>
+</span>
                 </div>
 
                 <!-- Navigation Links -->
@@ -19,7 +19,7 @@
                 @role('admin')
                     <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                         <x-nav-link :href="route('management')" :active="request()->routeIs('management')">
-                            {{ __('management') }}
+                            {{  __('management') }}
                         </x-nav-link>
                     </div>
                 @endrole
