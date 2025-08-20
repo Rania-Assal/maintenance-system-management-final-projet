@@ -21,11 +21,11 @@
                     <tr class="border-b">
                     <td class="px-6 py-1.5 whitespace-nowrap text-sm  text-center">{{ $user->name }}
                     </td>
-                    <td class="px-6 py-1.5 whitespace-nowrap text-sm">
+                    <td class="px-6 py-1.5 whitespace-nowrap text-sm ">
                         <div class="flex items-center gap-2"><img
                                  src="{{ asset('storage/'. $user->images) }}"
                                 alt="image" class="aspect-square rounded-lg object-cover h-16">
-                            <p class="font-bold">SendBot 🤖</p>
+                        
                         </div>
                     </td>
                     
@@ -38,7 +38,11 @@
                             <div class="rounded-full py-4 hover:bg-gray-100 focus:outline- cursor-pointer ">{{ $user->category?->name }}</div>
                         </div>
                     </td>
+
                 </tr>
+                <td class="px-6 py-1.5 whitespace-nowrap text-sm text-center">
+    <!-- Delete Button -->
+   
                 @endforeach
             </tbody>
         </table>
