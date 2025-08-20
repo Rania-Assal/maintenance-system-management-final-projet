@@ -33,7 +33,7 @@
                     @else
                         <a
                             href="{{ route('login') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
+                            class="inline-block px-5 py-1.5 dark:text-[#000000] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
                         >
                             Log in
                         </a>
@@ -41,38 +41,30 @@
                         @if (Route::has('register'))
                             <a
                                 href="{{ route('register') }}"
-                                class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
+                                class="inline-block px-5 py-1.5 dark:text-[#000000] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
                                 Register
                             </a>
                         @endif
                     @endauth
                 </nav>
             @endif
-        </header>
-       <div class="relative flex min-h-screen flex-col items-center justify-center">
-    
+        </header><div class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-100 via-pink-100 to-white p-10">
+
     <!-- Header -->
-    <h1 class="text-4xl font-bold text-purple-600 mb-6">
+    <h1 class="text-6xl font-extrabold text-purple-600 mb-6 text-center">
         Admin Panel
     </h1>
 
     <!-- Description -->
-    <p class="mb-8 text-lg text-black">
-        Welcome to the management section. From here, you can manage users, orders, and platform settings.
+    <p class="text-center text-lg text-gray-800 max-w-2xl mb-10 leading-relaxed">
+        Welcome to the management section. From here, you can manage users, orders, and platform settings efficiently and securely. All the tools you need are accessible in one place.
     </p>
 
-    <!-- Buttons -->
-    <div class="flex gap-4">
-        <a href="{{ url('/') }}" 
-           class="rounded-lg bg-purple-600 px-5 py-2 text-white hover:bg-purple-700 transition">
-           Home
-        </a>
-
-        <a href="{{ url('/dashboard') }}" 
-           class="rounded-lg bg-pink-500 px-5 py-2 text-white hover:bg-pink-600 transition">
-           Go to Dashboard
-        </a>
-    </div>
+    <!-- Button -->
+    <a href="{{ url('/dashboard') }}" 
+       class="flex items-center gap-2 rounded-lg bg-blue-800 px-8 py-4 text-white text-xl font-semibold hover:bg-blue-500 transition">
+       ⚙️ Go to Dashboard
+    </a>
 
 </div>
 
