@@ -42,7 +42,7 @@
   </div>
 
   <!-- Bottom -->
-  <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+  <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm pb-7">
     © 2025 Your Company. All rights reserved.
   </div>
 </footer>

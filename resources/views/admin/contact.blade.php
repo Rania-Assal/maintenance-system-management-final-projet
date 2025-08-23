@@ -7,7 +7,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12 bg-gray-50 dark:bg-gray-900">
+    <div class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
                 

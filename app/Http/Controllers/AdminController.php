@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
@@ -12,6 +13,8 @@ class AdminController extends Controller
         $users = User::all();
      return view('admin.management', compact('users'));
     }
+
+    
 
      public function about()
     {
@@ -30,4 +33,6 @@ class AdminController extends Controller
         
      return view('admin.services' );
     }
+
+
 }

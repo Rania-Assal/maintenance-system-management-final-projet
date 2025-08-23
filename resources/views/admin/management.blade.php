@@ -33,7 +33,7 @@
                     
                     <td class="px-6 py-1.5 whitespace-nowrap text-sm  text-center">
                         <span
-                            class="text-xs font-bold me-2 px-2.5 shadow py-2  bg-green-200 text-green-600 font-semibold rounded-lg shadow">{{ $user->address }}</span>
+                            class="text-xs font-bold me-2 px-2.5 py-2  bg-green-200 text-green-600 rounded-lg shadow">{{ $user->address }}</span>
                     </td>
                     <td class="px-6 py-1.5 whitespace-nowrap text-sm   flex justify-center items-center h-full gap-2">
                         <div class="relative inline-block text-left select-none ">

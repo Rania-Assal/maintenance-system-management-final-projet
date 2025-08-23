@@ -48,25 +48,26 @@
                     @endauth
                 </nav>
             @endif
-        </header><div class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-purple-100 via-pink-100 to-white p-10">
+        </header>
+        
 
-    <!-- Header -->
-    <h1 class="text-6xl font-extrabold text-purple-600 mb-6 text-center">
-        Admin Panel
-    </h1>
-
-    <!-- Description -->
-    <p class="text-center text-lg text-gray-800 max-w-2xl mb-10 leading-relaxed">
-        Welcome to the management section. From here, you can manage users, orders, and platform settings efficiently and securely. All the tools you need are accessible in one place.
-    </p>
-
-    <!-- Button -->
-    <a href="{{ url('/dashboard') }}" 
+<div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/017/027/449/small_2x/hands-holding-construction-tools-isolated-on-white-background-banner-collage-photo.jpg" alt="Background Image" class="object-cover object-center w-full h-full" />
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+  
+  <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+    <h1 class="text-5xl font-bold leading-tight mb-4">Welcome to Our Awesome Website</h1>
+    <p class="text-lg text-gray-300 mb-8"> Welcome to the management section. From here, you can manage users, orders, and platform settings efficiently and securely. All the tools you need are accessible in one place.
+</p>
+  <a href="{{ url('/dashboard') }}" 
        class="flex items-center gap-2 rounded-lg bg-blue-800 px-8 py-4 text-white text-xl font-semibold hover:bg-blue-500 transition">
        ⚙️ Go to Dashboard
-    </a>
-
+    </a>  
 </div>
+</div>
+
 
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>

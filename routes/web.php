@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StripeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -19,16 +20,20 @@ Route::middleware('auth')->group(function () {
 
 
 
-    
+    // management
     Route::get('/management', [AdminController::class, 'index'])->name('management')->middleware('role:admin');
-       Route::get('/about', [AdminController::class, 'about'])->name('about');
-              Route::get('/contact', [AdminController::class, 'contact'])->name('contact');
-                  Route::get('/services', [AdminController::class, 'services'])->name('services');
+    Route::get('/about', [AdminController::class, 'about'])->name('about');
+    Route::get('/contact', [AdminController::class, 'contact'])->name('contact');
+    Route::get('/services', [AdminController::class, 'services'])->name('services');
+    // stripe
+    Route::get('/stripe/payement', [StripeController::class, 'index'])->name('stripe.payement');
+    Route::get('pay-for-technicien', [StripeController::class, 'checkout'])->name('checkout');
+
 
 });
 
 
 
-// management
 
-require __DIR__.'/auth.php';
+
+require __DIR__ . '/auth.php';
