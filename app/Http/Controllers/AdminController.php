@@ -24,4 +24,10 @@ class AdminController extends Controller
         
      return view('admin.contact' );
     }
+
+         public function services()
+    {
+        
+     return view('admin.services' );
+    }
 }

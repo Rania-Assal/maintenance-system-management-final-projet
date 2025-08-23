@@ -23,6 +23,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/management', [AdminController::class, 'index'])->name('management')->middleware('role:admin');
        Route::get('/about', [AdminController::class, 'about'])->name('about');
               Route::get('/contact', [AdminController::class, 'contact'])->name('contact');
+                  Route::get('/services', [AdminController::class, 'services'])->name('services');
 
 });
 

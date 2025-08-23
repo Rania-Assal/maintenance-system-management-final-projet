@@ -1,52 +1,39 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-black leading-tight">
-            {{ __('Technicien Platform') }}
+            <div class="text-4xl font-bold">
+            Technicien Platform<span class="text-blue-800">.</span>
+          </div>
         </h2>
     </x-slot>
 
-   <div class="py-12">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+  
+  <div class="flex flex-wrap">
+    <div class="w-full sm:w-8/12 mb-10">
+      <div class="container mx-auto h-full sm:p-10">
+       
+        <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+          <div class="w-full">
+           <h1 class="text-4xl lg:text-6xl font-bold">Fast fixes, <span class="text-blue-700">lasting</span> trust</h1>
+
+            <div class="w-20 h-2 bg-blue-900"></div>
             
-            <div class="p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                
-               
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white leading-tight">
-                        Welcome to <span class="text-indigo-600">TechniConnect</span>
-                    </h1>
-                    
-                    <p class="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                        TechniConnect is your trusted platform that connects you with the best 
-                        <span class="font-semibold">technicians</span> around you.  
-                        From <span class="text-indigo-500 font-semibold">air conditioning experts</span> to 
-                        <span class="text-indigo-500 font-semibold">oven repair specialists</span>, we’ve got you covered.  
-                        Find reliable, skilled professionals to handle your technical needs quickly and efficiently.
-                    </p>
+            <p class="text-xl mb-10">
+              Welcome to our <span class="font-semibold text-blue-900">Technicien Platform</span>, 
+              where skilled professionals are ready to serve you. 
+              Our <span class="font-bold">Plumbers</span> ensure your water systems run flawlessly, fixing leaks and installing pipelines with precision. 
+              Our <span class="font-bold">Carpenters</span> design and repair furniture, delivering quality and style to your spaces. 
+              Our <span class="font-bold">Refrigeration Technicians</span> keep your cooling systems efficient, from AC units to refrigerators. 
+              And our <span class="font-bold">Oven Manufacturers</span> provide durable and reliable cooking solutions to make your kitchen safer and more efficient. 
+              Every service is handled with professionalism and dedication to quality.
+            </p>
 
-                    <div class="mt-8 flex gap-4">
-                        <a href="{{ route('register') }}" 
-                           class="px-6 py-3 bg-indigo-600 text-white rounded-xl shadow hover:bg-indigo-700 transition">
-                            Get Started
-                        </a>
-                        <a href="#services" 
-                           class="px-6 py-3 bg-gray-200 text-gray-800 rounded-xl shadow hover:bg-gray-300 transition">
-                            Explore Services
-                        </a>
-                    </div>
-                </div>
-
-              
-                <div class="flex justify-center">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.G9yB0l213goOZJl5QQ9v_AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
-                         alt="Technician at work" 
-                         class="rounded-2xl shadow-lg max-h-[400px] object-cover">
-                </div>
-            </div>
-
-        </div>
+            <button class="bg-blue-800 text-white text-2xl font-medium px-4 py-2 rounded shadow">Learn More</button>
+          </div>
+        </header>
+      </div>
     </div>
-</div>
+    <img src="https://static.vecteezy.com/ti/fotos-kostenlos/p2/22690639-einstellen-von-werkzeuge-zum-reparatur-im-ein-fall-auf-ein-weiss-hintergrund-sortiert-arbeit-oder-konstruktion-werkzeug-schraubenschlussel-zange-schraubendreher-oben-aussicht-foto.JPG" alt="Leafs" class="w-full h-48 object-cover sm:h-screen sm:w-4/12">
+  </div>
 
 </x-app-layout>

@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        // نفذ عند تحميل الصفحة
+       
         toggleCategory();
 
-        // نفذ عند تغيير الاختيار
+     
         roleSelect.addEventListener("change", toggleCategory);
     });
