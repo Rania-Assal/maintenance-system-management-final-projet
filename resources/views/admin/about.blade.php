@@ -15,7 +15,7 @@
                     Welcome to <span class="font-semibold text-indigo-500">TechniConnect</span>, your trusted platform that connects 
                     clients with professional technicians. We focus on delivering high-quality services that make 
                     your life easier. Whether you need quick repairs, expert installation, or specialized maintenance, 
-                    we’ve got the right professional for you.
+                    we've got the right professional for you.
                 </p>
             </div>
 
@@ -57,6 +57,7 @@
                         High-quality ovens and reliable repair services for your kitchen needs. We make cooking easier and more efficient.
                     </p>
                 </div>
+                
 
             </div>
         </div>
