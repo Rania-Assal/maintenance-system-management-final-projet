@@ -6,9 +6,10 @@ window.Alpine = Alpine;
 
 Alpine.start();
 document.addEventListener("DOMContentLoaded", function() {
-        const roleSelect = document.getElementById("role");
-        const categoryContainer = document.getElementById("category-container");
+    const roleSelect = document.getElementById("role");
+    const categoryContainer = document.getElementById("category-container");
 
+    if (roleSelect && categoryContainer) {
         function toggleCategory() {
             let selectedRole = roleSelect.options[roleSelect.selectedIndex].text.toLowerCase();
 
@@ -19,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-       
         toggleCategory();
-
-     
         roleSelect.addEventListener("change", toggleCategory);
-    });
+    }
+});

@@ -5,9 +5,11 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
+                    <img src="https://static.vecteezy.com/system/resources/previews/035/490/103/original/service-tools-icon-on-white-background-repair-service-symbol-for-your-web-site-design-and-logo-illustration-vector.jpg"
+                        alt="" class="h-10 w-10 rounded-full shadow-md object-cover m-5">
                     <span class="text-2xl font-extrabold tracking-wide text-indigo-600">
-    Techni<span class="text-gray-800 dark:text-gray-200">Connect</span>
-</span>
+                        Techni<span class="text-gray-800 dark:text-gray-200">Connect</span>
+                    </span>
                 </div>
 
                 <!-- Navigation Links -->
@@ -17,13 +19,13 @@
                     </x-nav-link>
                 </div>
 
-                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('about') }}
                     </x-nav-link>
                 </div>
 
-                  <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('services')" :active="request()->routeIs('services')">
                         {{ __('services') }}
                     </x-nav-link>
@@ -32,7 +34,7 @@
                 @role('admin')
                     <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                         <x-nav-link :href="route('management')" :active="request()->routeIs('management')">
-                            {{  __('management') }}
+                            {{ __('management') }}
                         </x-nav-link>
                     </div>
                 @endrole

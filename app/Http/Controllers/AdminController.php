@@ -12,6 +12,8 @@ class AdminController extends Controller
     {
         $users = User::all();
      return view('admin.management', compact('users'));
+     dd($request->user());
+
     }
 
     
