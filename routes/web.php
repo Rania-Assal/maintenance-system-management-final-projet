@@ -29,6 +29,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/stripe/payement', [StripeController::class, 'index'])->name('stripe.payement');
     Route::get('pay-for-technicien', [StripeController::class, 'checkout'])->name('checkout');
 
+    // delet
+    Route::delete('/users/{user}', [AdminController::class, 'destroy'])->name('users.destroy');
 
 });
 
