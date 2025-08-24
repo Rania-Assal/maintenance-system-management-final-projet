@@ -2,8 +2,8 @@
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-black leading-tight">
             <div
-    class="w-fit pb-1 px-2 mx-4 rounded-md text-2xl font-semibold border-b-2 border-blue-600 dark:border-b-2 dark:border-yellow-600">
-    Management</div>
+                class="w-fit pb-1 px-2 mx-4 rounded-md text-2xl font-semibold border-b-2 border-blue-600 dark:border-b-2 dark:border-yellow-600">
+                Management</div>
         </h2>
     </x-slot>
 
@@ -21,30 +21,28 @@
             <tbody class="undefined select-none">
                 @foreach ($users as $user)
                     <tr class="border-b">
-                    <td class="px-6 py-1.5 whitespace-nowrap text-sm  text-center">{{ $user->name }}
-                    </td>
-                    <td class="px-6 py-1.5 whitespace-nowrap text-sm ">
-                        <div class="flex items-center gap-2"><img
-                                 src="{{ asset('storage/'. $user->images) }}"
-                                alt="image" class="aspect-square rounded-lg object-cover h-16">
-                        
-                        </div>
-                    </td>
-                    
-                    <td class="px-6 py-1.5 whitespace-nowrap text-sm  text-center">
-                        <span
-                            class="text-xs font-bold me-2 px-2.5 py-2  bg-green-200 text-green-600 rounded-lg shadow">{{ $user->address }}</span>
-                    </td>
-                    <td class="px-6 py-1.5 whitespace-nowrap text-sm   flex justify-center items-center h-full gap-2">
-                        <div class="relative inline-block text-left select-none ">
-                            <div class="rounded-full py-4 hover:bg-gray-100 focus:outline- cursor-pointer ">{{ $user->category?->name }}</div>
-                        </div>
-                    </td>
+                        <td class="px-6 py-1.5 whitespace-nowrap text-sm  text-center">{{ $user->name }}
+                        </td>
+                        <td class="px-6 py-1.5 whitespace-nowrap text-sm ">
+                            <div class="flex items-center gap-2"><img src="{{ asset('storage/' . $user->images) }}"
+                                    alt="image" class="aspect-square rounded-lg object-cover h-16">
 
-                </tr>
-                <td class="px-6 py-1.5 whitespace-nowrap text-sm text-center">
-    <!-- Delete Button -->
-   
+                            </div>
+                        </td>
+
+                        <td class="px-6 py-1.5 whitespace-nowrap text-sm  text-center">
+                            <span
+                                class="text-xs font-bold me-2 px-2.5 py-2 bg-green-200 text-green-600 rounded-lg shadow">{{ $user->address }}</span>
+                        </td>
+                        <td
+                            class="px-6 py-1.5 whitespace-nowrap text-sm   flex justify-center items-center h-full gap-2">
+                            <div class="relative inline-block text-left select-none ">
+                                <div class="rounded-full py-4 hover:bg-gray-100 focus:outline- cursor-pointer ">
+                                    {{ $user->category?->name }}</div>
+                            </div>
+                        </td>
+
+                    </tr>
                 @endforeach
             </tbody>
         </table>
